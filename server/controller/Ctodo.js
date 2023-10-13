@@ -20,8 +20,8 @@ exports.createTodo = async (req, res) => {
       done: false,
     });
     console.log(newTodo);
-    // res.send(newTodo);
-    res.end();
+    res.send(newTodo);
+    // res.end();
   } catch (err) {
     res.send(err);
   }
@@ -54,6 +54,7 @@ exports.updateTodo = async (req, res) => {
   }
 };
 
+// DELETE /api/todo/:todoId
 exports.deleteTodo = async (req, res) => {
   try {
     let isDeleted = await Todo.destroy({
