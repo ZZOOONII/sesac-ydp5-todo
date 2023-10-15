@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import Todo from './components/Todo';
 import AddTodo from './components/AddTodo';
 import axios from 'axios';
+import './App.css';
 
 function App() {
   // console.log(process.env.REACT_APP_DB_HOST);

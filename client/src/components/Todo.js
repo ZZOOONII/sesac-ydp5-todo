@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+
 // checkbox와 label을 렌더링 하는 투두 하나!
 export default function Todo({ item, deleteItem, updateItem }) {
   //   console.log(item);
@@ -46,7 +47,7 @@ export default function Todo({ item, deleteItem, updateItem }) {
   };
 
   return (
-    <div>
+    <div className="todo-item"> {/* CSS 클래스 적용 */}
       <input
         type="checkbox"
         name={`todo${id}`}
